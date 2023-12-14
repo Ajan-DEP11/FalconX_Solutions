@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+body{
+    background-color: rgb(6, 6, 52);
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(220.59deg,rgb(40, 40, 237) 19%,purple 69%,rgb(31, 32, 32));
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:2rem;
+}
+section{
+    padding:0 15%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    /* font-family: 'Permanent Marker',cursive; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    line-height: 1;
+    /* color: rgb(229, 216, 28); */
+    color: rgb(233, 150, 56);
+    margin: 0 0 45px;
+
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight:600;
+    color: rgb(238, 238, 231);
+    margin-bottom: 10px;
+}
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-img img{
+   
+   width: 700px;
+   height: auto;
+   padding-left: 50px;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: rgb(220, 56, 174);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+
+}
+.hero-text a:hover{
+    background: transparent;
+    border:1px solid white;
+    transform: translateX(5px);
+}
+
+.social-media{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    padding: 0 8%;
+    transform: translatex(30%);
+}
+.social-media i{
+    display: block;
+    margin: 25px 10px;
+    font-size: 30px;
+    color: white;
+    transition: all .50s ease;
+}
+.social-media a i:hover{
+    color: rgb(241, 223, 26);
+    transform: translateX(5px);
+}
